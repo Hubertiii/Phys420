@@ -8,9 +8,16 @@
 \usepackage{graphicx}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 \usepackage[nottoc]{tocbibind}
-
+\usepackage{indentfirst}
+\usepackage{titling}
+\newcommand{\subtitle}[1]{%
+	\posttitle{%
+		\par\end{center}
+	\begin{center}\large#1\end{center}
+	\vskip0.2em}}%
 \begin{document}
-\title{MATH420 project}
+\title{Primordial Black Holes as a dark matter candidate}
+\subtitle{Department of Physics, University of Liverpool}
 \author{Hubert Radecki, supervisor: David Schaich}
 \maketitle
 
@@ -25,14 +32,22 @@ Dark matter in general, possible candidates
 Dark matter is an observational fact
 Matter in the universe consists of ordinary matter and mysterious dark matter.
 Many candidates for dark matter are considered taking into account their properties,...
+search techniques for DM (SM and DM interactions: indirect, direct, production)
+
 \section {evidence for Dark matter}
-- for spiral galaxies, the mass rotation far from the centre is approximately the same as mass close to the centre which should not be a case using conservation laws (v=sqrtGM/r). So there must be a mysterious mass spread further from the centre of the visible mass that makes these objects rotate at similar speeds.  
--galaxy clusters causing gravitational lensing. Mass of the galaxy can be measured using this technique and the calculations show the visible mass is only a fraction. 
--galaxy collisions can be observed showing the x-ray and visible matter is in a different place than the majority of matter calculated by lensing (bullet clusters)
--simulations of dark matter distribution 
--CMB power spectrum
--JWT guardian article by A.Pontzen
--
+
+\begin{enumerate}
+    \item Galaxy rotation curves: for spiral galaxies, the mass rotation far from the centre is approximately the same as mass close to the centre which should not be a case using conservation laws (v=sqrtGM/r). So there must be a mysterious mass spread further from the centre of the visible mass that makes these objects rotate at similar speeds.  
+    \item Gravitational lensing: galaxy clusters causing gravitational lensing. Mass of the galaxy can be measured using this technique and the calculations show the visible mass is only a fraction.
+    \item Viral theorem
+    \item Mass to light ratio
+    \item Galaxy collisions: galaxy collisions can be observed showing the x-ray and visible matter is in a different place than the majority of matter calculated by lensing (bullet clusters)
+    \item CMB power spectrum
+    \item simulations of DM distribution 
+\end{enumerate} 
+
+
+
 \section {DM candidates}
 Introduce some candidates and describe how they can be detected, ruled out. 
 Look into the mass scale and how some of these candidates are partially or fully ruled out. 
@@ -47,7 +62,7 @@ ADD, UED, fifth dimension, KK parity, LKP, KK graviton etc,
 \subsection {axions}
 
 \subsection {neutrinos}
-
+Neutrinos have a very small mass and therefore move close to the speed of light, that's why they are called "hot dark matter" candidate. There were many problems found with this theory, for example a problem with galactic structures, where neutrinos would not be able to create them. 
 \subsection{MACHO's}
 Black holes, PBH, hawking radiation 
 A Massive Astronomical Compact Halo Object (MACHO), is an object in space that emits extremely small amount of electromagnetic radiation or no radiation and therefore is hard to detect. 
@@ -57,19 +72,25 @@ Two more types of black holes: Anti-de Sitter (AdS) and asymptotically de Sitter
 De Sitter space has positive cosmological constant, universe has positive curvature, accelerating. 
 Anti-de Sitter has negative curvature. We focus on flat universe black holes. 
 
-There are three geometries of black holes in a "no hair" theory, that are the potential descriptions black holes. 
-1. Schwarzschild metric is a gemoetric solution for black holes with no angular momentum and no charge. the event horizon is spherical. 
+There are three geometries of black holes in a "no hair" theory, that are the potential descriptions of black holes:
+1. Schwarzschild metric is a geometric solution for black holes with no angular momentum and no charge. the event horizon is spherical. 
 2. Reissner–Nordström metric for static black holes with electric charge. the difference from Schwarzschild black hole is that it has two horizons, event horizon and Cauchy horizon. The limit to the mass of this black hole is when the charge component exceeds the mass component and event horizon disappears. We shall discuss the charge and mass limit for the PBH's in a following sections. 
 3. Kerr–Newman metric for rotating black holes with charge. inner horizon, outer horizon and ergosphere 
 
-creation of black holes 
 
 \subsection {PBH}
 \subsubsection {formation} How could they be created
 1. Inhomogeneities - collapse from primordial density fluctuations. gravitational collapse due to high matter density in inflation and radiation dominated era.
 2. scale invariant fluctuations 
-3. jeans length and collapse in matter domianted era 
+3. jeans length and collapse in matter dominated era 
 4. more collapse scenarios 
+
+
+1.Loops
+2.collapse of density fluctuations, jeans scale 
+3.abundance- collapse of overdensities during radiation domination era
+4. mass to scale relation, inflation models 
+5. Mass function 
 
 https://arxiv.org/pdf/2002.12778.pdf and https://arxiv.org/pdf/2110.02821.pdf    collapse scenarios 
 
@@ -94,22 +115,83 @@ the limit of maximum mass of PBH's is also the survival of galaxies in clusters 
 Studying dwarf galaxies can set an upper limit on PBH's by comparing the galaxy structure to an evolution of a structure with theoretical disruptions influenced by PBHs. 
 
 
-We are assuming the Hawking radiation is valid and it restricts one of the lower mass boundries of PBH's. There also exists a theory questioning Hawking radiation and considering extremely small blackholes as possible candidates for PBH's while the laws of physics for such small and dense object are not known yet and some different rules apply other than Hawking radiation. 
+We are assuming the Hawking radiation is valid and it restricts one of the lower mass boundries of PBH's. There also exists a theory questioning Hawking radiation and considering extremely small black holes as possible candidates for PBH's when the laws of physics for such small and dense object are not known yet and some different rules apply at Planck scale at m ~ 10e-5g . If the Hawking evaporation stops at one point, Black holes at Planck scale could account for the entire mass of dark matter but would be far too small to detect them, unless they carry non-zero electric charge. When a black hole evaporates, it emits charged particles. If we assume it stops evaporating at some Planck scale mass, there is a random charge left in a black hole that could account for its final charge which could theoretically be possible to detect. The alternative for gaining charge by a black hole is related to its geometry. These black holes are called Charged Planck-scale Relics.  \cite{Lehmann_2019} 
+
+Assume the Schwarzschild BH with no charge or spin. 
+
+1.Hawking temperature (which is inversely proportional to the mass) 
+\[T_H=\frac{\hbar c^3}{8k_B\pi GM}\]
+2.surface area of a black hole
+\[A=4\pi r_s^2=\frac{16\pi G^2 M^2}{c^4}\]
+\[r_s^2=\frac{2GM}{c^2}\]
+3.luminosity of black hole
+\[\sigma=\frac{2\pi^5 k_B^4}{15c^2h^3}\]
+\[L=A\sigma T^4 \]
+\[L=\frac{16\pi G^2 M^2}{c^4} \times \frac{2\pi^5 k_B^4}{15c^2h^3} \times (\frac{\hbar c^3}{8k_B\pi GM})^4\]
+\[L=\frac{16\pi G^2 M^2}{c^4} \times \frac{2\pi^5 k_B^4}{15c^2h^3} \times \frac{\hbar^3 c^{12}}{8^4 \pi^4 k_B^4 G^4 M^4}\]
+\[L=\frac{\hbar c^6}{15360\pi G^2 M^2}\]
+
+4.Stefan-Boltzmann law
+\[\frac{-dM}{dt}=\frac{dE}{dt}=L\]
+
+5. mass of BH for evaporation at time of the universe
+\[dt=-\frac{1}{L} dM\]
+\[t=-\int_{}^{} \frac{1}{L} \ dM\]
+\[t=-\int_{}^{} \frac{15360\pi G^2 M^2}{\hbar c^6} \ dM\]
+\[t=- \frac{15360\pi G^2 M^3}{3 \hbar c^6}\]
+age of universe is \(t=4.22 \times 10e17s\) 
+\[M=(t \times  \frac{3 \hbar c^6}{15360\pi G^2 }\ )^\frac{1}{3}\]
+\[M \approx 3.1618 \times 10^{11} kg\]
+comparison to the solar mass
+\[\frac{M}{M_o}=\frac{3.1618 \times 10^{11} kg}{1.9891 \times 10^{30} kg} \approx 1.5896 \times 10^{-19}\]
+
+6.case with gaining mass/ accretion rate
+bondi radius- a region around a BH that attracts the mass from space nearby. 
+
+\[\dot M \approx \frac{\pi \rho G^2 M^2}{c_s^3}\]
+\[\dot M=\frac{dM}{dt}\]
+\[\int_{}^{} \frac{1}{M^2}\ dM=\int_{}^{} \frac{\pi \rho G^2}{c_s^3}\ dt\]
+
+\[-\frac{1}{M^3}=\frac{\pi \rho G^2 t}{c_s^3} \]
+\[M=-\sqrt[3]{\frac{\pi \rho G^2 t}{c_s^3}}=-\sqrt[3]{\frac{\pi \rho (6.6743 \times 10e-11 )^2 4.22 \times 10e17}{343^3}}\]
+
+Ambient density of universe around \(\rho=9.9 \times 10^{-27} \frac{kg}{m^3}=\)
+\[M=-\sqrt[3]{\frac{\pi \rho G^2 t}{c_s^3}}=-\sqrt[3]{\frac{\pi \times 9.9 \times 10^{-27} \times  (6.6743 \times 10^{-11} )^2 \times 4.22 \times 10^{17}}{343^3}}=9.6181 \times 10^{-18}  \frac{kg}{m^3}\]
+
+
+
+
 
 \subsubsection {spin}
+21-cm constraint 
+
 \subsubsection {charge}
+Initial charge of the PBH is eventually lost by emission and accretion actions. Charge loss could be prevented by considering PBHs with extreme spin. 
 
 \subsubsection {microlensing}
 brightness changes casued by dark matter moving between observer and the object. \cite{GRIEST_1993_microlensing} 
 it must be separated from actual microlensing cases - background such as cosmic rays. 
 
+Supernovae lensing 
+
+femtolensing is a gravitational lensing (where the interference fringes in frequency from different phases of gamma ray bursts can be resolved). \cite{Katz_2018}
+
 \subsubsection {gravitational waves}
 A rate of gravitational wave events observed by LIGO/VIRGO can set another limit. Massive PBHs would be expected to create a detectable gravitational waves in these observatories.  \cite{PBH_as_DM_candidate}
+Gravitational wave observatories can detect only a small range of these waves, the lower limit is for example due to tectonic plate noise which cannot be eliminated. 
+
+
+
 
 \subsubsection {cosmic microwave background}
 Cosmic microwave background and thermal history of the universe could give another limit for PBH mass. PBHs could absorb a lot of matter in the early stage of the universe boosting the temperature of the background because its increasing luminosity.  \cite{PBH_as_DM_candidate}
 
 \subsubsection{direct detection}
+Kepler telescope which is looking for exoplanets has a similar searching mechanism to black holes detection. It finds planets orbiting stars by gravitational microlensing method which is also used for detecting black holes. The example could be two stars case when the background star light bends due to the forward star mass. The brightness increases and if a forward star has a planet at some similar distance and mass to the earth it appears as a small peak in the brightness vs time plot. The same principle applies for Black hole detections. 
+
+\subsubsection {indirect searches}
+Mass distribution LIGO search 
+
 \section {future searches for DM}
 
 \section {conclusion}
@@ -129,11 +211,14 @@ PBH vs other DM candidates
 
 \end{document}
 
-
-
-
+Eddington luminosity and black holes
+Bondi radius
+surface area of the black hole 
 
 https://arxiv.org/pdf/hep-ph/9303253.pdf   microlensing 
 https://arxiv.org/pdf/2205.02153.pdf       gravitational waves and PBHs
 https://arxiv.org/pdf/2002.12778.pdf       PBH creation and mass constraints 
 https://arxiv.org/pdf/2206.02672.pdf       PBH constraints with Hawking radiation
+
+https://www.youtube.com/watch?v=An58h_OGjLw    yt lectures about PBHs
+https://arxiv.org/pdf/1707.04591.pdf
